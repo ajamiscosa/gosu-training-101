@@ -22,4 +22,38 @@ abstract class AbstractPolicy {
 		_initial++  //increment for the next time.
 		return (currentNbr as String).leftPad(POLICY_NUMBER_LENGTH).replace(' ', '0')
 	}
+
+
+	/**
+	 * The implementation of this method should add the specified coverage to the Policy and associate the coverage with
+	 * the specified Car. The Car must already exist on the Policy -  this method must throw an exception
+	 * indicating that the specified car does not exist on the Policy
+	 *
+	 * @param cov - coverage to be added to the policy
+	 * @param veh - vehicle to be covered by the specified coverage
+	 * @throws Exception if the specified car is not already on the Policy or if the specified car already has the coverage added.
+	 */
+	abstract public function addCoverage(cov : Coverage, veh : Car)
+
+	/**
+	 * The implementation of this method should return the coverages that are associated with the specified vehicle
+	 * @param veh
+	 * @return
+	 */
+	abstract public function getCarCoverages(veh : Car) : ArrayList<Coverage>
+
+	/**
+	 * Implementation of this method will return true if this policy is in force.
+	 * A Policy is in force on the specified date if the date falls on or between the effective date and the expiration date.
+	 * @param aDate : the date being checked.
+	 * @return
+	 */
+	abstract public function isPolicyInForce(aDate : Date) : boolean
+
+	/**
+	 * The Implementation of this method must return the number of cars that have coverages of the specified type on this Policy
+	 * @param coverageType
+	 * @return
+	 */
+	abstract public function getCoveredCarCount(coverageType : CoverageType) : Integer
 }

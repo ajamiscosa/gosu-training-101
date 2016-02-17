@@ -37,6 +37,11 @@ class Policy extends AbstractPolicy{
 		}
 	}
 
+	construct(effectiveDate: Date, expirationDate: Date)
+	{
+
+	}
+
 	@Override
 	property get EffectiveDate() : Date
 	{
@@ -60,6 +65,63 @@ class Policy extends AbstractPolicy{
 	{
 		return _drivers
 	}
+
+
+	/**
+	 * The implementation of this method should add the specified coverage to the Policy and associate the coverage with
+	 * the specified Car. The Car must already exist on the Policy -  this method must throw an exception
+	 * indicating that the specified car does not exist on the Policy
+	 *
+	 * @param cov - coverage to be added to the policy
+	 * @param veh - vehicle to be covered by the specified coverage
+	 * @throws Exception if the specified car is not already on the Policy or if the specified car already has the coverage added.
+	 */
+	public function addCoverage(cov : Coverage, veh : Car)
+	{
+		veh.Coverages.add(cov)
+	}
+
+	/**
+	 * The implementation of this method should return the coverages that are associated with the specified vehicle
+	 * @param veh
+	 * @return
+	 */
+	public function getCarCoverages(veh : Car) : ArrayList<Coverage>
+	{
+		return veh.Coverages
+	}
+
+	/**
+	 * Implementation of this method will return true if this policy is in force.
+	 * A Policy is in force on the specified date if the date falls on or between the effective date and the expiration date.
+	 * @param aDate : the date being checked.
+	 * @return
+	 */
+	public function isPolicyInForce(aDate : Date) : boolean
+	{
+		// to compensate for Date.after() and Date.before(), -1 and 1 day was added respectively
+		return aDate.after(EffectiveDate.addDays(-1)) && aDate.before(ExpirationDate.addDays(1))
+	}
+
+	/**
+	 * The Implementation of this method must return the number of cars that have coverages of the specified type on this Policy
+	 * @param coverageType
+	 * @return
+	 */
+	public function getCoveredCarCount(coverageType : CoverageType) : Integer
+	{
+		var counter = 0
+		for(car in Vehicles)
+		{
+			if(car.Coverages.contains(coverageType))
+			{
+				counter++
+			}
+		}
+		return counter
+	}
+
+
 
 	override function toString() : String
 	{
