@@ -42,9 +42,10 @@ class PricingEngine implements IPricingEngine
 			
 			for(coverage in car.Coverages)
 			{
-				subTotal += coverage.getBaseRate() // directly add to subtotal
+				subTotal += coverage.getBaseRate() // directly add coverage rate for each car to subtotal
 
-				// mapping to breakdown.
+
+				// start of mapping to breakdown.
 				priceHolder = 0
 				if(priceBreakdown.containsKey(coverage.InsuranceCoverageType))
 				{
