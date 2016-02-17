@@ -1,0 +1,290 @@
+Gosu compiler(Training) took 4.953s.
+Gosu compiler(Training) took 5.411s.
+Gosu compiler(Training) took 2.58s.
+Gosu compiler(Training) took 5.102s.
+Gosu compiler(Training) took 16.09s.
+Gosu compiler(Training) took 6.918s.
+Gosu compiler(Training) took 2.216s.
+Gosu compiler(Training) took 2.221s.
+Gosu compiler(Training) took 2.01s.
+Gosu compiler(Training) took 2.156s.
+Gosu compiler(Training) took 2.478s.
+Gosu compiler(Training) took 2.133s.
+Gosu compiler(Training) took 2.315s.
+Gosu compiler(Training) took 2.123s.
+Gosu compiler(Training) took 1.168s.
+Gosu compiler(Training) took 4.515s.
+Gosu compiler(Training) took 2.658s.
+Gosu compiler(Training) took 2.49s.
+Gosu compiler(Training) took 2.39s.
+Gosu compiler(Training) took 2.467s.
+Gosu compiler(Training) took 2.639s.
+Gosu compiler(Training) took 4.624s.
+Gosu compiler(Training) took 1.008s.
+Gosu compiler(Training) took 2.716s.
+Gosu compiler(Training) took 6.006s.
+Gosu compiler(Training) took 0.946s.
+Gosu compiler(Training) took 2.465s.
+Gosu compiler(Training) took 2.57s.
+Gosu compiler(Training) took 2.559s.
+Gosu compiler(Training) took 2.628s.
+Gosu compiler(Training) took 2.556s.
+Gosu compiler(Training) took 2.64s.
+Gosu compiler(Training) took 2.551s.
+Gosu compiler(Training) took 2.122s.
+Gosu compiler(Training) took 2.63s.
+Gosu compiler(Training) took 5.376s.
+Gosu compiler(Training) took 2.359s.
+Gosu compiler(Training) took 2.381s.
+Gosu compiler(Training) took 4.969s.
+Gosu compiler(Training) took 2.352s.
+Gosu compiler(Training) took 2.299s.
+Gosu compiler(Training) took 5.063s.
+Gosu compiler(Training) took 2.314s.
+Gosu compiler(Training) took 2.639s.
+Gosu compiler(Training) took 4.085s.
+Gosu compiler(Training) took 5.046s.
+Gosu compiler(Training) took 2.652s.
+Gosu compiler(Training) took 2.615s.
+Gosu compiler(Training) took 2.592s.
+Gosu compiler(Training) took 2.728s.
+Gosu compiler(Training) took 2.471s.
+Gosu compiler(Training) took 2.574s.
+Gosu compiler(Training) took 2.668s.
+Gosu compiler(Training) took 2.602s.
+Gosu compiler(Training) took 2.475s.
+Gosu compiler(Training) took 2.524s.
+Gosu compiler(Training) took 2.479s.
+Gosu compiler(Training) took 2.559s.
+Gosu compiler(Training) took 2.777s.
+Gosu compiler(Training) took 2.738s.
+Gosu compiler(Training) took 2.727s.
+Gosu compiler(Training) took 2.727s.
+Gosu compiler(Training) took 2.695s.
+Gosu compiler(Training) took 2.773s.
+Gosu compiler(Training) took 2.727s.
+Gosu compiler(Training) took 2.61s.
+Gosu compiler(Training) took 2.248s.
+Gosu compiler(Training) took 2.782s.
+Gosu compiler(Training) took 2.947s.
+Gosu compiler(Training) took 2.643s.
+Gosu compiler(Training) took 2.643s.
+Gosu compiler(Training) took 2.84s.
+Gosu compiler(Training) took 2.737s.
+Gosu compiler(Training) took 2.719s.
+Gosu compiler(Training) took 4.837s.
+Gosu compiler(Training) took 0.918s.
+Gosu compiler(Training) took 2.842s.
+Gosu compiler(Training) took 5.952s.
+Gosu compiler(Training) took 2.606s.
+Gosu compiler(Training) took 2.069s.
+Gosu compiler(Training) took 1.415s.
+Gosu compiler(Training) took 2.637s.
+Gosu compiler(Training) took 1.981s.
+Gosu compiler(Training) took 2.024s.
+Gosu compiler(Training) took 1.968s.
+Gosu compiler(Training) took 1.983s.
+Gosu compiler(Training) took 2.521s.
+Gosu compiler(Training) took 2.122s.
+Gosu compiler(Training) took 2.53s.
+Gosu compiler(Training) took 2.596s.
+Gosu compiler(Training) took 2.718s.
+org.jetbrains.jps.incremental.ProjectBuildException: Internal Gosu compiler exception.
+
+	at gw.gosu.ij.compiler.ReflectiveGosuCompilerProxy.invokeReflective(ReflectiveGosuCompilerProxy.java:201)
+	at gw.gosu.ij.compiler.ReflectiveGosuCompilerProxy.lambda$createProxy$275(ReflectiveGosuCompilerProxy.java:55)
+	at com.sun.proxy.$Proxy10.compile(Unknown Source)
+	at gw.gosu.ij.compiler.GosuBuilder.compile(GosuBuilder.java:225)
+	at gw.gosu.ij.compiler.GosuBuilder.doBuild(GosuBuilder.java:129)
+	at gw.gosu.ij.compiler.InstrumentedBuilder.build(InstrumentedBuilder.java:37)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runModuleLevelBuilders(IncProjectBuilder.java:1202)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuildersForChunk(IncProjectBuilder.java:877)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildTargetsChunk(IncProjectBuilder.java:948)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunkIfAffected(IncProjectBuilder.java:840)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunks(IncProjectBuilder.java:665)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuild(IncProjectBuilder.java:372)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.build(IncProjectBuilder.java:193)
+	at org.jetbrains.jps.cmdline.BuildRunner.runBuild(BuildRunner.java:137)
+	at org.jetbrains.jps.cmdline.BuildSession.runBuild(BuildSession.java:293)
+	at org.jetbrains.jps.cmdline.BuildSession.run(BuildSession.java:124)
+	at org.jetbrains.jps.cmdline.BuildMain$MyMessageHandler$1.run(BuildMain.java:242)
+	at org.jetbrains.jps.service.impl.SharedThreadPoolImpl$1.run(SharedThreadPoolImpl.java:41)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
+	at gw.internal.gosu.parser.FileSystemGosuClassRepository$ClassFileInfo.getContent(FileSystemGosuClassRepository.java:777)
+	at gw.lang.parser.FileSource.getSource(FileSource.java:18)
+	at gw.internal.gosu.parser.GosuParser.setScript(GosuParser.java:342)
+	at gw.internal.gosu.parser.GosuClass.makeParserForPhase(GosuClass.java:2539)
+	at gw.internal.gosu.parser.GosuClass.compileHeaderIfNeeded(GosuClass.java:1831)
+	at gw.internal.gosu.parser.GosuClass.getSuperClass(GosuClass.java:2052)
+	at gw.internal.gosu.parser.GosuProgram_Proxy.getSuperClass(gw.internal.gosu.parser.GosuProgram_Proxy:2)
+	at gw.internal.gosu.parser.GosuClass.getTypeInfo(GosuClass.java:977)
+	at gw.internal.gosu.parser.GosuClass.getTypeInfo(GosuClass.java:92)
+	at gw.internal.gosu.parser.GosuProgram_Proxy.getTypeInfo(gw.internal.gosu.parser.GosuProgram_Proxy:2)
+	at gw.lang.gosuc.simple.GosuCompiler.isCompilable(GosuCompiler.java:94)
+	at gw.lang.gosuc.simple.GosuCompiler.compile(GosuCompiler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at gw.gosu.ij.compiler.ReflectiveGosuCompilerProxy.invokeReflective(ReflectiveGosuCompilerProxy.java:196)
+	... 22 more
+Caused by: java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
+	at java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
+	at java.util.Iterator.forEachRemaining(Iterator.java:115)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at gw.internal.gosu.parser.FileSystemGosuClassRepository$ClassFileInfo.getContent(FileSystemGosuClassRepository.java:770)
+	... 38 more
+Caused by: java.nio.charset.MalformedInputException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at java.io.BufferedReader$1.hasNext(BufferedReader.java:571)
+	... 42 more
+Gosu compiler(Training) took 1.472s.
+Gosu compiler(Training) took 2.552s.
+org.jetbrains.jps.incremental.ProjectBuildException: Internal Gosu compiler exception.
+
+	at gw.gosu.ij.compiler.ReflectiveGosuCompilerProxy.invokeReflective(ReflectiveGosuCompilerProxy.java:201)
+	at gw.gosu.ij.compiler.ReflectiveGosuCompilerProxy.lambda$createProxy$275(ReflectiveGosuCompilerProxy.java:55)
+	at com.sun.proxy.$Proxy10.compile(Unknown Source)
+	at gw.gosu.ij.compiler.GosuBuilder.compile(GosuBuilder.java:225)
+	at gw.gosu.ij.compiler.GosuBuilder.doBuild(GosuBuilder.java:129)
+	at gw.gosu.ij.compiler.InstrumentedBuilder.build(InstrumentedBuilder.java:37)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runModuleLevelBuilders(IncProjectBuilder.java:1202)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuildersForChunk(IncProjectBuilder.java:877)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildTargetsChunk(IncProjectBuilder.java:948)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunkIfAffected(IncProjectBuilder.java:840)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunks(IncProjectBuilder.java:665)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuild(IncProjectBuilder.java:372)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.build(IncProjectBuilder.java:193)
+	at org.jetbrains.jps.cmdline.BuildRunner.runBuild(BuildRunner.java:137)
+	at org.jetbrains.jps.cmdline.BuildSession.runBuild(BuildSession.java:293)
+	at org.jetbrains.jps.cmdline.BuildSession.run(BuildSession.java:124)
+	at org.jetbrains.jps.cmdline.BuildMain$MyMessageHandler$1.run(BuildMain.java:242)
+	at org.jetbrains.jps.service.impl.SharedThreadPoolImpl$1.run(SharedThreadPoolImpl.java:41)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
+	at gw.internal.gosu.parser.FileSystemGosuClassRepository$ClassFileInfo.getContent(FileSystemGosuClassRepository.java:777)
+	at gw.lang.parser.FileSource.getSource(FileSource.java:18)
+	at gw.internal.gosu.parser.GosuParser.setScript(GosuParser.java:342)
+	at gw.internal.gosu.parser.GosuClass.makeParserForPhase(GosuClass.java:2539)
+	at gw.internal.gosu.parser.GosuClass.compileHeaderIfNeeded(GosuClass.java:1831)
+	at gw.internal.gosu.parser.GosuClass.getSuperClass(GosuClass.java:2052)
+	at gw.internal.gosu.parser.GosuProgram_Proxy.getSuperClass(gw.internal.gosu.parser.GosuProgram_Proxy:2)
+	at gw.internal.gosu.parser.GosuClass.getTypeInfo(GosuClass.java:977)
+	at gw.internal.gosu.parser.GosuClass.getTypeInfo(GosuClass.java:92)
+	at gw.internal.gosu.parser.GosuProgram_Proxy.getTypeInfo(gw.internal.gosu.parser.GosuProgram_Proxy:2)
+	at gw.lang.gosuc.simple.GosuCompiler.isCompilable(GosuCompiler.java:94)
+	at gw.lang.gosuc.simple.GosuCompiler.compile(GosuCompiler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at gw.gosu.ij.compiler.ReflectiveGosuCompilerProxy.invokeReflective(ReflectiveGosuCompilerProxy.java:196)
+	... 22 more
+Caused by: java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
+	at java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
+	at java.util.Iterator.forEachRemaining(Iterator.java:115)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at gw.internal.gosu.parser.FileSystemGosuClassRepository$ClassFileInfo.getContent(FileSystemGosuClassRepository.java:770)
+	... 38 more
+Caused by: java.nio.charset.MalformedInputException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at java.io.BufferedReader$1.hasNext(BufferedReader.java:571)
+	... 42 more
+Gosu compiler(Training) took 1.5s.
+Gosu compiler(Training) took 2.557s.
+Gosu compiler(Training) took 2.041s.
+Gosu compiler(Training) took 2.596s.
+Gosu compiler(Training) took 3.035s.
+Gosu compiler(Training) took 2.493s.
+Gosu compiler(Training) took 2.742s.
+Gosu compiler(Training) took 2.12s.
+Gosu compiler(Training) took 2.807s.
+Gosu compiler(Training) took 2.344s.
+Gosu compiler(Training) took 2.344s.
+Gosu compiler(Training) took 4.011s.
+Gosu compiler(Training) took 0.716s.
+Gosu compiler(Training) took 2.576s.
+Gosu compiler(Training) took 2.678s.
+Gosu compiler(Training) took 2.366s.
+Gosu compiler(Training) took 2.608s.
+Gosu compiler(Training) took 2.331s.
+Gosu compiler(Training) took 2.31s.
+Gosu compiler(Training) took 2.301s.
+Gosu compiler(Training) took 2.333s.
+Gosu compiler(Training) took 2.296s.
+Gosu compiler(Training) took 5.797s.
+Gosu compiler(Training) took 3.412s.
+Gosu compiler(Training) took 3.15s.
+Gosu compiler(Training) took 2.947s.
+Gosu compiler(Training) took 2.516s.
+Gosu compiler(Training) took 6.506s.
+Gosu compiler(Training) took 2.667s.
+Gosu compiler(Training) took 2.75s.
+Gosu compiler(Training) took 2.588s.
+Gosu compiler(Training) took 2.446s.
+Gosu compiler(Training) took 2.686s.
+Gosu compiler(Training) took 2.967s.
+Gosu compiler(Training) took 2.907s.
+Gosu compiler(Training) took 2.523s.
+Gosu compiler(Training) took 2.512s.
+Gosu compiler(Training) took 2.632s.
+Gosu compiler(Training) took 2.631s.
+Gosu compiler(Training) took 2.669s.
+Gosu compiler(Training) took 2.594s.
+Gosu compiler(Training) took 2.679s.
+Gosu compiler(Training) took 2.648s.
+Gosu compiler(Training) took 2.683s.
+Gosu compiler(Training) took 2.658s.
+Gosu compiler(Training) took 2.706s.
+Gosu compiler(Training) took 11.812s.
+Gosu compiler(Training) took 6.107s.
+Gosu compiler(Training) took 3.049s.
+Gosu compiler(Training) took 0.995s.
+Gosu compiler(Training) took 2.663s.
+Gosu compiler(Training) took 4.839s.
+Gosu compiler(Training) took 2.728s.
+Gosu compiler(Training) took 2.656s.
+Gosu compiler(Training) took 2.652s.
+Gosu compiler(Training) took 2.693s.
+Gosu compiler(Training) took 2.937s.
+Gosu compiler(Training) took 3.158s.
+Gosu compiler(Training) took 2.73s.
+Gosu compiler(Training) took 3.012s.
+Gosu compiler(Training) took 2.593s.
+Gosu compiler(Training) took 2.688s.
+Gosu compiler(Training) took 2.62s.
+Gosu compiler(Training) took 4.369s.
+Gosu compiler(Training) took 2.711s.
+Gosu compiler(Training) took 2.829s.
+Gosu compiler(Training) took 2.501s.
+Gosu compiler(Training) took 2.669s.
+Gosu compiler(Training) took 3.483s.
+Gosu compiler(Training) took 2.98s.
+Gosu compiler(Training) took 2.793s.
+Gosu compiler(Training) took 2.503s.
+Gosu compiler(Training) took 2.548s.
+Gosu compiler(Training) took 2.484s.
+Gosu compiler(Training) took 4.641s.
