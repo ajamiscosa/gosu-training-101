@@ -14,6 +14,7 @@ class Car {
 	private var _color: Color as Color
 	private var _coverages : ArrayList<Coverage> as readonly Coverages
 
+
 	private construct(){}
 	construct(year: int, make: String, model: String)
 	{
@@ -40,13 +41,26 @@ class Car {
 	}
 
 
-	public function addCoverage(cov : Coverage){
+	public function addCoverage(cov : Coverage, policy: Policy){
+		for(coverage in Coverages)
+		{
+			if(coverage.InsuranceCoverageType==cov.InsuranceCoverageType)
+			{
+				throw new Exception("Coverage `${cov.InsuranceCoverageType}` is already applied to this car.")
+			}
+		}
+		cov.CoveredCar = this
+		cov.ParentPolicy = policy
 		Coverages.add(cov)
 	}
 
-	public function addCoverages(covs : ArrayList<Coverage>){
-		Coverages.addAll(covs)
+	public function addCoverages(covs : ArrayList<Coverage>, policy: Policy){
+		 for(coverage in covs)
+		 {
+			 addCoverage(coverage, policy)
+		 }
 	}
+
 
 	private function generateVIN(){
 		_vin = "VIN${Make.charAt(0)}${Year}${Date.Now.getTime()}"

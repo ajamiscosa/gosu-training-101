@@ -15,6 +15,7 @@ class Coverage {
 	private var _covType : CoverageType as InsuranceCoverageType
 	private static var _baseRates : HashMap<CoverageType, Double> =
 		 {BodilyInjury -> 75.00, Liability -> 85.00, Comprehensive -> 105.00}
+	private var _policy : AbstractPolicy as ParentPolicy  //The policy on which coverage exists
 	private var _vehicle : Car as CoveredCar              //the vehicle that is covered by this coverage
 
 	//construct(){} //No default constructor. We must only contruct coverages of the correct type

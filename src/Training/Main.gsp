@@ -53,6 +53,10 @@ var policy = new Policy(owner, OneYear)
 	var car2 = new Car(2015, "Nissan", "Navarra", 10000, Color.GREEN)
 	var car3 = new Car(2014, "Honda", "City", 10000, Color.RED)
 
+	 car1.addCoverages({new Coverage(Comprehensive),new Coverage(Liability)}, policy)
+	 car2.addCoverages({new Coverage(Comprehensive),new Coverage(BodilyInjury)}, policy)
+	 car3.addCoverages({new Coverage(BodilyInjury), new Coverage(Liability)}, policy)
+
 	 // Add Car
 	 policy.Vehicles.add(car1)
 	 policy.Vehicles.add(car2)
@@ -73,6 +77,11 @@ var policy = new Policy(owner, OneYear)
 	 var car4 = new Car(2015, "Toyota", "Avanza", 10000, Color.RED)
 	 var car5 = new Car(2015, "Nissan", "Navarra", 10000, Color.YELLOW)
 	 var car6 = new Car(2014, "Mercedes", "Benz", 10000, Color.BLACK)
+
+
+	 car4.addCoverage(new Coverage(Comprehensive), policy1)
+	 car5.addCoverage(new Coverage(BodilyInjury), policy1)
+	 car6.addCoverage(new Coverage(Liability), policy1)
 
 	 // Add Car
 	 policy1.Vehicles.add(car4)

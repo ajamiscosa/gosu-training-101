@@ -39,7 +39,13 @@ class Policy extends AbstractPolicy{
 
 	construct(effectiveDate: Date, expirationDate: Date)
 	{
+		_policyNbr = assignNextPolicyNumber()
 
+		_drivers = new ArrayList<Person>()
+		_vehicles = new ArrayList<Car>()
+
+		_effectiveDate = effectiveDate
+		_expirationDate = expirationDate
 	}
 
 	@Override
@@ -60,6 +66,11 @@ class Policy extends AbstractPolicy{
 		return _vehicles
 	}
 
+	property set Vehicles(vehicles: ArrayList<Car>)
+	{
+		_vehicles = vehicles
+	}
+
 	@Override
 	property get Drivers() : ArrayList<Person>
 	{
@@ -78,7 +89,9 @@ class Policy extends AbstractPolicy{
 	 */
 	public function addCoverage(cov : Coverage, veh : Car)
 	{
-		veh.Coverages.add(cov)
+		cov.CoveredCar = veh
+		cov.ParentPolicy = this
+		veh.addCoverage(cov, this)
 	}
 
 	/**
@@ -99,7 +112,7 @@ class Policy extends AbstractPolicy{
 	 */
 	public function isPolicyInForce(aDate : Date) : boolean
 	{
-		// to compensate for Date.after() and Date.before(), -1 and 1 day was added respectively
+		// to compensate for Date.after() and Date.before(), -1 and 1 day were added respectively
 		return aDate.after(EffectiveDate.addDays(-1)) && aDate.before(ExpirationDate.addDays(1))
 	}
 
@@ -113,9 +126,12 @@ class Policy extends AbstractPolicy{
 		var counter = 0
 		for(car in Vehicles)
 		{
-			if(car.Coverages.contains(coverageType))
+			for(coverages in car.Coverages)
 			{
-				counter++
+				if(coverages.InsuranceCoverageType == coverageType)
+				{
+					counter++
+				}
 			}
 		}
 		return counter
