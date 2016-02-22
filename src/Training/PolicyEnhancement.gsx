@@ -81,6 +81,10 @@ enhancement PolicyEnhancement: Policy {
 
 		return root.toXmlString()
 	}
+
+	function parseVehicleXml(path: String) {
+
+	}
 }
 
 
