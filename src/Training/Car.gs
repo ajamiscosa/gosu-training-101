@@ -42,6 +42,7 @@ class Car {
 
 
 	public function addCoverage(cov : Coverage, policy: Policy){
+
 		for(coverage in Coverages)
 		{
 			if(coverage.InsuranceCoverageType==cov.InsuranceCoverageType)

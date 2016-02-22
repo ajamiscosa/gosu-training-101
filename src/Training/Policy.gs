@@ -89,8 +89,10 @@ class Policy extends AbstractPolicy{
 	 */
 	public function addCoverage(cov : Coverage, veh : Car)
 	{
-		cov.CoveredCar = veh
-		cov.ParentPolicy = this
+		if(!Vehicles.contains(veh))
+		{
+			throw new Exception("Car is not a member of this policy.")
+		}
 		veh.addCoverage(cov, this)
 	}
 

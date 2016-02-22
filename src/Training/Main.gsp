@@ -1,5 +1,6 @@
 package Training
 
+uses java.io.FileWriter
 /**
  * Created by Aron Jhed Amiscosa on 2/10/2016.
  */
@@ -96,4 +97,12 @@ var policy = new Policy(owner, OneYear)
 
 	 print(new PricingEngine().pricePolicy(policy1))
 
+
+	 var writer = new FileWriter("D:/${policy.PrimaryHolder}.xml")
+	 writer.write(policy.toVehicleXmlString())
+	 writer.flush()
+
+	 writer = new FileWriter("D:/${policy1.PrimaryHolder}.xml")
+	 writer.write(policy1.toVehicleXmlString())
+	 writer.flush()
 
